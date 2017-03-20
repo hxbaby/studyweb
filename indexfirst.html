@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>管理系统设计</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .menu {
+            margin-top: 12px;
+            border-radius:4px;
+            border-style: solid;
+            border-color: #aaaaaa;
+            border-width: 1px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation"><!---添加导航条，默认导航条为白色-->
+    <div class="container"><!--导航条文本居中-->
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+
+            <a class="navbar-brand" href="#">某管理系统</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">首页</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">功能<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li class="dropdown-header">业务功能</li>
+                        <li><a href="#">信息建立</a></li>
+                        <li><a href="#">信息管理</a></li>
+                        <li><a href="#">信息查询</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">系统管理</li>
+                        <li><a href="#">设置</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">帮助</a></li>
+
+            </ul>
+            <input class="menu" type="text" value="用户名"/>
+            <input class="menu" type="text " value="密码"/>
+            <button class="menu">登录</button>
+        </div>
+    </div>
+</nav>
+
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+</html>

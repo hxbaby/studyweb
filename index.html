@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>王者荣耀法师集锦</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"><!--不记得该代码的含义了-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        body{
+            padding-top: 50px;
+            padding-bottom: 50px;
+
+        }
+        /*轮播广告*/
+        .carousel{
+            height: 500px;
+            background-color: #000;
+            margin-bottom: 70px;
+        }
+        .carousel .item{
+            height: 500px;
+            background-color: #000;
+        }
+        .carousel img{
+            width:100%;
+            height:500px;
+        }
+        .carousel-caption p{
+            margin-bottom: 20px;
+            line-height: 1.8;
+            font-size: 20px;
+            color:black;
+
+        }
+        /*内容简介 */
+        #summary-container .col-md-4{
+            text-align: center;
+        }
+
+        .divider{
+            margin: 40px;
+        }
+        /*标题栏特点编辑*/
+        .feature{
+            padding: 30px 0px;
+        }
+        .feature-heading{
+            font-size: 60px;
+            color:#2e6da4;
+            margin-top: 120px;
+        }
+        .feature-heading .text-muted{
+            color:#adadad;
+            font-size: 28px;
+        }
+    </style>
+</head>
+    <body>
+    <!--导航页-->
+<div style="width:900px; height:auto;margin: 0 auto;">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation" style="width:900px;margin: 0 auto;"><!---添加导航条，默认导航条为白色-->
+        <div class="container"><!--导航条文本居中-->
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="demo-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">王者荣耀法师攻略</a>
+            </div>
+                <div class="collapse navbar-collapse"id="demo-navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">综述</a></li>
+                        <li><a href="#">简述</a></li>
+
+                        <li class="dropdown">
+                            <a href="#"class="dropdown-toggle" data-toggle="dropdown">特点<span class="caret"></span></a>
+                            <ul class="dropdown-menu"role="menu">
+                                <li><a href="#tab-anqila">安其拉</a></li>
+                                <li><a href="#tab-diaochan">貂蝉</a></li>
+                                <li><a href="#tab-xiaoqiao">小乔</a></li>
+                                <li><a href="#tab-daji">妲己</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" data-toggle="modal" data-target="#about">关于</a></li>
+                    </ul>
+                </div>
+        </div>
+    </nav>
+
+<!--轮播广告-->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <!--ol模块上为图标点点模块-->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+ <!--此div模块为滚动内容-->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="images/anqila.jpg" alt="1 slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/diaochan.jpg" alt="1 slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/xiaoqiao.jpg" alt="2 slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/daji.jpg" alt="3 slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                    </div  >
+                </div>
+            </div>
+        </div>
+
+<!-- 左右点击Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">上一页</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">下一页</span>
+        </a>
+    </div>
+
+        <hr class="divider"><!--分割线-->
+
+<!--特点标签栏-->
+        <ul class="nav nav-tabs" role="tablist" id="tab-list">
+            <li class="active">
+                <a href="#tab-anqila" role="tab" data-toggle="tab">安其拉</a>
+            </li>
+            <li>
+                <a href="#tab-diaochan" role="tab" data-toggle="tab">貂蝉</a>
+            </li>
+            <li>
+                <a href="#tab-xiaoqiao" role="tab" data-toggle="tab">小乔</a>
+            </li>
+            <li>
+                <a href="#tab-daji" role="tab" data-toggle="tab">妲己</a>
+            </li>
+        </ul>
+<!--点击按钮现出隐藏的内容-->
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab-anqila">
+                <div class="row feature">
+                    <div class="col-md-7">
+                        <h2 class="feature-heading">安其拉<span class="text-muted">&nbsp;&nbsp;法师</span></h2>
+                        <ul style="border:1px solid #fff;font-size: medium;list-style: none">
+                            <li>英雄定位：远程魔法</li>
+                            <li>英雄价格：8888金币/488砖石</li>
+                            <li>英雄属性：<p style="display:inline">&nbsp;&nbsp;<img src="images/photo1.png" alt="photo1"></p></li>
+                            <li>攻击伤害：<p style="display:inline">&nbsp;&nbsp;<img src="images/photo2.png" alt="photo2"></p></li>
+                            <li>技能效果：<p style="display:inline">&nbsp;<img src="images/photo3.png" alt="photo3"></p></li>
+                            <li>上手难度：<p style="display:inline"><img src="images/photo4.png" alt="photo4"></p></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="feature-image img-responsive" src="images/anqila1.jpg" alt="aiqiyi">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="tab-diaochan">
+                <div class="row feature">
+                    <div class="col-md-5">
+                        <img class="feature-image img-responsive"  src="images/diaochan1.jpg" alt="youku">
+                    </div>
+                    <div class="col-md-7">
+                        <h2 class="feature-heading">貂蝉<span class="text-muted">&nbsp;&nbsp;法师</span></h2>
+                        <ul style="border:1px solid #fff;font-size: medium;list-style: none">
+                            <li>英雄定位：远程魔法</li>
+                            <li>英雄价格：8888金币/488砖石</li>
+                            <li>英雄属性：<p style="display:inline">&nbsp;&nbsp;<img src="images/photo1.png" alt="photo1"></p></li>
+                            <li>攻击伤害：<p style="display:inline">&nbsp;&nbsp;<img src="images/photo2.png" alt="photo2"></p></li>
+                            <li>技能效果：<p style="display:inline">&nbsp;<img src="images/photo3.png" alt="photo3"></p></li>
+                            <li>上手难度：<p style="display:inline"><img src="images/photo4.png" alt="photo4"></p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="tab-xiaoqiao">
+                <div class="row feature">
+                    <div class="col-md-7">
+                        <h2 class="feature-heading">小乔<span class="text-muted">&nbsp;&nbsp;法师</span></h2>
+                        <ul style="border:1px solid #fff;font-size: medium;list-style: none">
+                            <li>英雄定位：远程魔法</li>
+                            <li>英雄价格：8888金币/488砖石</li>
+                            <li>英雄属性：<p style="display:inline">&nbsp;&nbsp;<img src="images/photo1.png" alt="photo1"></p></li>
+                            <li>攻击伤害：<p style="display:inline">&nbsp;&nbsp;<img src="images/photo2.png" alt="photo2"></p></li>
+                            <li>技能效果：<p style="display:inline">&nbsp;<img src="images/photo3.png" alt="photo3"></p></li>
+                            <li>上手难度：<p style="display:inline"><img src="images/photo4.png" alt="photo4"></p></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="feature-image img-responsive"  src="images/xiaoqiao1.jpg" alt="tengxuntv">
+                    </div>
+
+                </div>
+            </div>
+            <div class="tab-pane" id="tab-daji">
+                <div class="row feature">
+                    <div class="col-md-5">
+                        <img class="feature-image img-responsive" src="images/daji1.jpg" alt="souhutv">
+                    </div>
+                    <div class="col-md-7">
+                        <h2 class="feature-heading">妲己<span class="text-muted">&nbsp;&nbsp;法师</span></h2>
+                        <ul style="border:1px solid #fff;font-size: medium;list-style: none">
+                            <li>英雄定位：远程魔法</li>
+                            <li>英雄价格：8888金币/488砖石</li>
+                            <li>英雄属性：<p style="display:inline">&nbsp;&nbsp;<img src="images/photo1.png" alt="photo1"></p></li>
+                            <li>攻击伤害：<p style="display:inline">&nbsp;&nbsp;<img src="images/photo2.png" alt="photo2"></p></li>
+                            <li>技能效果：<p style="display:inline">&nbsp;<img src="images/photo3.png" alt="photo3"></p></li>
+                            <li>上手难度：<p style="display:inline"><img src="images/photo4.png" alt="photo4"></p></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+         <hr class="divider"><!--分割线-->
+
+ <!--页面版权页设置-->
+        <footer >
+            <p class="pull-right"><a href="#top">回到顶部</a></p>
+            <p>2017-By Honyhj</p>
+        </footer>
+
+</div>
+<!--modal 对话框设置-->
+    <div class="modal fade" id="about">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                        <h4 class="modal-title">关于</h4>
+                </div>
+
+                <div class="modal-body">
+                    <p>专注于网页的设计，提供更好的服务，追求更好的用户体验。</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+    <!--菜单定位js调用-->
+    <script>
+        $(document).ready(function(){
+        $("#demo-navbar .dropdown-menu a").click(function(){
+            var href=$(this).attr("href");
+            $("#tab-list a[href='"+href+"']").tab("show");
+        });
+        });
+    </script>
+</body>
+</html>

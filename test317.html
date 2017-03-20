@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>信息排列效果</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+        a{
+            text-decoration: none;
+        }
+        body{
+            font-family: "Microsoft YaHei UI";
+            font-size: 14px;
+        }
+        ul{
+            list-style: none;
+        }
+        #box{
+            width:400px;
+            height:auto;
+            border:1px solid #2aabd2;
+            margin:0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .top{
+            height: 40px;
+
+        }
+        .top a{
+            height:16px;
+            width: 16px;
+            display: block;
+            border: 1px solid red;
+            float: right;
+            margin:5px;
+        }
+        .btn-list-off{
+            background-image: url("images/book5.jpg");
+            background-repeat: no-repeat;
+            background-position: -110px -80px;
+        }
+        .btn-car-on{
+            background-image: url("images/book2.jpg");
+            background-repeat: no-repeat;
+            background-position: -120px -110px;
+        }
+        #box ul li{
+            width: 164px;
+            height:auto;
+            border:1px solid #f5e79e;
+            float:left;
+            margin: 10px;
+
+        }
+
+        .a-img{
+            width:164px;
+            height:150px;
+            display: block;
+            overflow: hidden;
+        }
+        p a,span{
+            display:block;
+            line-height: 23px;
+            padding-left: 10px;
+        }
+        /*.content1{*/
+            /*text-align: center;*/
+        /*}*/
+        .bottom{
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background-color: #8c8c8c;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <div class="top">
+        <a  class="btn-list-off" href="#" title="列表模式"></a>
+        <a  class="btn-car-on" href="#" title="卡片模式"></a>
+    </div>
+    <ul>
+        <li>
+            <div >
+                <a href="#" class="a-img">
+                    <img src="images/book1.jpg" width="164" height="150"/>
+                </a>
+                <p>
+                    <a href="#">心</a>
+                    <span>book5</span>
+                    <span>50%的人喜欢此图</span>
+                </p>
+            </div>
+            <div class="bottom">未收藏</div>
+        </li>
+        <li>
+            <div >
+                <a href="#" class="a-img">
+                    <img src="images/book2.jpg" width="164" height="150"/>
+                </a>
+                <p>
+                    <a href="#">花</a>
+                    <span>book2</span>
+                    <span>60%的人喜欢此图</span>
+                </p>
+            </div>
+            <div class="bottom">未收藏</div>
+        </li>
+        <li>
+            <div >
+                <a href="#" class="a-img">
+                    <img src="images/book3.jpg" width="164" height="150"/>
+                </a>
+                <p>
+                    <a href="#">world</a>
+                    <span>book3</span>
+                    <span>70%的人喜欢此图</span>
+                </p>
+            </div>
+            <div class="bottom">未收藏</div>
+        </li>
+        <li>
+            <div >
+                <a href="#" class="a-img">
+                    <img src="images/book4.jpg" width="164" height="150"/>
+                </a>
+                <p>
+                    <a href="#">tree</a>
+                    <span>book4</span>
+                    <span>80%的人喜欢此图</span>
+                </p>
+            </div>
+            <div class="bottom">未收藏</div>
+        </li>
+        <li>
+            <div >
+                <a href="#" class="a-img">
+                    <img src="images/book5.jpg" width="164" height="150"/>
+                </a>
+                <p>
+                    <a href="#">风景</a>
+                    <span>book5</span>
+                    <span>90%的人喜欢此图</span>
+                </p>
+            </div>
+            <div class="bottom">未收藏</div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
